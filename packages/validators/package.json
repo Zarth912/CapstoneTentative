@@ -1,6 +1,6 @@
 {
   "name": "@frandiaz/cb-front-validators",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist",
   "types": "./dist",
   "files": [
