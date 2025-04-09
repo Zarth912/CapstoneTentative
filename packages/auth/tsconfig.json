@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@frandiaz/cb-front-validators": ["../validators/src"],
+      "@frandiaz/server": ["../server/src"]
+    }
+  }
+}

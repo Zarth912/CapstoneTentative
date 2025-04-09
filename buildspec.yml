@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18.x
+    commands:
+      - npm install -g pnpm
+  pre_build:
+    commands:
+      - pnpm co:login
+      - pnpm install
+  build:
+    commands:
+      - sh ./scripts/pre-deploy.sh
+      - pnpm sst deploy --stage $APP_STAGE
